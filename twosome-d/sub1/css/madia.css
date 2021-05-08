@@ -1,0 +1,116 @@
+@media screen and (max-width: 1280px) {
+
+  .sub1main { 
+    width: 100%; height: 500px; position: relative; 
+    background-image: url(../img/main1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .sub2maintxt {
+    width: 50%; height: 100%;
+    /* background-color: palevioletred; */
+    text-align: center;
+    color: #fff;
+    padding-top: 15%;
+    margin-left: 25%;
+  }
+  .ctxt2 {
+    right: 0;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+  /* 아이콘 누르면 나오는 gnb */
+.gnbb > li > a {
+    font-size: 1.3em;
+  }
+  #sub1 > li > a,
+  #sub2 > li > a,
+  #sub3 > li > a,
+  #sub4 > li > a,
+  #sub5 > li > a,
+  #sub6 > li > a { 
+  font-size: 1em; 
+  color: #7d6c64;
+  font-weight: bold;
+}
+
+.sub1main { 
+  width: 100%; height: 500px; position: relative; 
+  background-image: url(../img/main1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sub2maintxt {
+  width: 50%; height: 100%;
+  /* background-color: palevioletred; */
+  text-align: center;
+  color: #fff;
+  padding-top: 23%;
+  margin-left: 25%;
+}
+
+
+
+/* 브랜드 이야기 */
+.ctxt1 {
+  background-color: #6baedb;
+  position: absolute;
+  width: 500px; height: 100%;
+  left: 0; top: 0;
+  color: #fff;
+  z-index: 555;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 1%, #6baedb 50%);
+  padding: 80px 0 0 40px;
+}
+.brandStory img { 
+  margin-right: -400px;
+}
+.btn1 { bottom: 100px; }
+/* ********** //끝 */
+
+
+/* 커피 이야기 */
+.coffeeStory img {
+  left: -270px;
+  height: 450px;
+}
+.ctxt2 {
+  background-color: #514945;
+  height: 100%; top: 0; right: 0;
+  width: 600px;
+  padding-top: 80px;
+  padding-left: 130px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 10%, #514945 50%);
+}
+
+.btn2 {
+  bottom: 100px;
+}
+
+
+
+
+/* 디저트이야기 */
+.ctxt3 {
+  background-color: #ebd7ca;
+  height: 100%; top: 0;
+  left: 0;
+  padding: 80px 0 0 40px;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 1%, #ebd7ca 50%);
+}
+.dessertStory img {
+  position: relative;
+  height: 400px;
+  left: 150px;
+}
+.btn3 { bottom: 100px; }
+
+
+
+}

@@ -1,0 +1,470 @@
+/* 햄버거 아이콘 누르면 나오는 영역 */
+/* 지금은 잠깐 안보이게 */
+/* .gnb { display: none;} */
+
+/* 상단 */
+.container {
+  width: 100%; height: 100%; position: relative;
+}
+
+/* 서브1 메인 이미지 영역 */
+.sub1main { 
+  width: 100%; height: 600px; position: relative; 
+  background-image: url(../img/main1.jpg);
+  background-repeat: no-repeat;
+}
+/* 텍스트영역 */
+.sub2maintxt {
+  width: 50%; height: 100%;
+  /* background-color: palevioletred; */
+  text-align: center;
+  color: #fff;
+  padding-top: 12%;
+  margin-left: 25%;
+}
+.sub2maintxt p:nth-child(1) {
+  font-size: 4em;
+  font-family: 'Eoe_Zno_B';
+}
+.sub2maintxt p:nth-child(2) {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+/* 상단 끝 */
+
+/* 헤더 */
+header {
+  /* background-color: #514946; */ /* 지우기 */
+  width: 100%; height: 100px;
+  position: absolute; top: 10px;
+  z-index: 800;
+}
+.hdfixed {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  box-shadow: 0px 0px 10px 1px rgba(138, 138, 138, 0.596);
+} /* 제이쿼리에 추가 할 클래스 */
+
+
+/* 로고 */
+#logo {
+  position: absolute;
+  left: 50px; top: 15px;
+  z-index: 9999;
+  height: 70px;
+}
+#logo.ls { position: absolute; height: 60px; top: 10px; }
+
+#logo > a {
+  display: block;
+  height: 100%;
+}
+#logo img { height: 100%; }
+/* //로고 끝 */
+
+/* 네비게이션 영역 */
+nav { 
+  position: relative;
+  width: 100%; height: 100%; 
+  /* background-color: palegoldenrod; */
+}
+
+/* 현재 보여지는 아이콘 영역 */
+.navi {
+  display: block;
+  color: white;
+  font-size: 3em;
+  float: right;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
+/* 제이쿼리에 추가할 클래스 */
+.bar { margin-top: 6px; }
+
+.navi i { transition: all 0.5s; }
+.navi:hover > i { color: #AB162C; }
+/* //현재 보여지는 아이콘 영역 끝 */
+/* //헤더&컨테이너 영역 끝 */
+
+
+/* 햄버거 아이콘 누르면 나오는 영역 */
+.gnb {
+  background-color: #f0e9e3;
+  position: fixed;
+  width: 100%; height: 100%;
+  z-index: 8888;
+  opacity: 0;
+} 
+.gnbb {
+  position: absolute;
+  width: 100%;
+  /* background-color: palegreen; */
+  height: 500px; top: 250px;
+}
+
+/* 1차 메뉴영역 */
+.gnbb > li {
+  float: left;
+  position: relative;
+  width: 16.6666%;
+  height: 100%;
+  text-align: center;
+}
+.gnbb > li > a { 
+  font-size: 1.7em; font-weight: bold;
+  color: #8a4343;
+}
+
+#sub1,
+#sub2,
+#sub3,
+#sub4,
+#sub5,
+#sub6 {
+  margin-top: 30px;
+}
+
+#sub1 > li,
+#sub2 > li,
+#sub3 > li,
+#sub4 > li,
+#sub5 > li,
+#sub6 > li { padding-top: 30px;}
+
+#sub1 > li > a,
+#sub2 > li > a,
+#sub3 > li > a,
+#sub4 > li > a,
+#sub5 > li > a,
+#sub6 > li > a { 
+  font-size: 1.3em; 
+  color: #7d6c64;
+  font-weight: bold;
+}
+
+#sub1 > li > a:hover,
+#sub2 > li > a:hover,
+#sub3 > li > a:hover,
+#sub4 > li > a:hover,
+#sub5 > li > a:hover,
+#sub6 > li > a:hover { 
+  color: #514945;
+  border-bottom: 1px solid #373739;
+}
+
+
+/* hide영ㅇ역*/
+
+.hide {
+  position: absolute;
+  width: 100%; height: 100px;
+  top: 20px;
+}
+/* hide logo 영역 */
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 50px;
+}
+.logo > a { display: block; }
+.logo img { height: 70px; }
+
+/* htxt영역 */
+.htxt { 
+  /* background-color: papayawhip; */
+  position: absolute;
+  left: 300px;
+  width: 300px; height: 100%;
+}
+/* 로그인웅앵 영역 */
+.htxt > ul > li {
+  float: left;
+  margin-right: 20px;
+}
+.htxt > ul > li > a {
+  color: #514945;
+  font-size: 1.2em;
+  line-height: 100px;
+}
+.htxt > ul > li > a:hover { border-bottom: 1px solid #514945; }
+
+/* 닫기 버튼 영역 */
+.x {
+  color: white;
+  font-size: 4em;
+  float: right;
+  margin-right: 50px;
+}
+.x > a > i { transition: all 0.5s; }
+.x:hover > a > i { color: #AB162C; }
+
+/* //햄버거 아이콘 누르면 나오는 영역 끝 */
+
+
+
+/* 콘텐츠 부분 */
+.content {
+  position: relative;
+  width: 100%; height: 100%;
+}
+
+/* 브랜드 이야기 */
+.brandStory {
+  background-color: #6baedb;
+  position: relative;
+  width: 100%; height: 400px;
+  overflow: hidden;
+}
+.brandStory:after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 980px;
+  height: 100%;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 60%, #6baedb 100%);
+}
+.brandStory img { 
+  float: right;
+  margin-right: -230px;
+}
+.ctxt1 {
+  /* background-color: paleturquoise; */
+  top: 60px; left: 10%;
+  position: absolute;
+  width: 500px; height: 70%;
+  color: #fff;
+  z-index: 555;
+}
+.ctxt1 p:nth-child(1) {
+  font-size: 2.5em;
+  font-family: 'Eoe_Zno_B';
+}
+.ctxt1 p:nth-child(2){
+  font-size: 1.7em;
+}
+.ctxt1 p:nth-child(3) {
+  margin-top: 20px;
+}
+/* 자세히 보기 btn*/
+.btn1 {
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  width: 170px; height: 45px;
+  text-align: center;
+  font-weight: bold; font-size: 1.1em;
+  line-height: 40px;
+  bottom: 30px;
+  cursor: pointer;
+}
+.btn1:hover {
+  background-color: #fff;
+  color: #6baedb;
+}
+/* //브랜드 이야기 끝 */
+
+/* 커피이야기 */
+.coffeeStory {
+  background-color: #514945;
+  position: relative;
+  width: 100%; height: 400px;
+  overflow: hidden;
+}
+.coffeeStory:after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 1100px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 60%, #514945 100%);
+}
+.coffeeStory img {
+  position: absolute;
+  left: -100px; bottom: 0;
+}
+.ctxt2 {
+  /* background-color: palegoldenrod; */
+  position: absolute;
+  width: 500px; height: 70%;
+  color: #fff;
+  z-index: 555;
+  position: absolute;
+  right: 10%; top: 60px;
+}
+.ctxt2 p:nth-child(1) {
+  font-size: 2.5em;
+  font-family: 'Eoe_Zno_B';
+}
+.ctxt2 p:nth-child(2) {
+  font-size: 1.7em;
+}
+.ctxt2 p:nth-child(3) {
+  margin-top: 20px;
+}
+/* 자세히보기 btn */
+.btn2 {
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  width: 170px; height: 45px;
+  text-align: center;
+  font-weight: bold; font-size: 1.1em;
+  line-height: 40px;
+  bottom: 30px;
+  cursor: pointer;
+}
+.btn2:hover {
+  background-color: #fff;
+  color: #514945;
+}
+/* //커피이야기 끝 */
+
+/* 디저트이야기 */
+.dessertStory {
+  background-color: #ebd7ca;
+  position: relative;
+  width: 100%; height: 400px;
+  overflow: hidden;
+}
+.dessertStory::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 950px;
+  height: 100%;
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 60%, #ebd7ca 100%);
+}
+.dessertStory img {
+  float: right;
+}
+.ctxt3 {
+  /* background-color: plum; */
+  top: 60px; left: 10%;
+  position: absolute;
+  width: 500px; height: 70%;
+  color: #353535;
+  z-index: 555;
+}
+.ctxt3 p:nth-child(1) {
+  font-size: 2.5em;
+  font-family: 'Eoe_Zno_B';
+}
+.ctxt3 p:nth-child(2) {
+  font-size: 1.7em;
+}
+.ctxt3 p:nth-child(3) {
+  margin-top: 20px;
+}
+/* 자세히 보기 btn*/
+.btn3 {
+  position: absolute;
+  border: 2px solid #353535;
+  border-radius: 2px;
+  width: 170px; height: 45px;
+  text-align: center;
+  font-weight: bold; font-size: 1.1em;
+  line-height: 40px;
+  bottom: 30px;
+  cursor: pointer;
+}
+.btn3:hover {
+  background-color: #353535;
+  color: #ebd7ca;
+}
+/* //디저트 이야기 끝 */
+/* //컨텐츠 끝 */
+
+/* 푸터 */
+
+footer {
+  position: relative;
+  background-color: #fff;
+  width: 100%; height: 300px;
+}
+/* 윗내용 */
+.tp {
+  /* background-color: rosybrown; */
+  position: relative;
+  width: 100%; height: 70px;
+  border-top: 1px solid #333;
+}
+.tpp {
+  /* background-color: coral; */
+  height: 100%;
+  position: absolute;
+  left: 50%; margin-left: -308.46px;
+  padding-top: 26px;
+}
+.tpp > li {
+  float: left;
+  text-align: center;
+}
+.tpp a {
+  color: #333;
+  font-weight: bold;
+  margin-right: 30px;
+}
+.tpp li:last-child a { margin-right: 0;}
+/* //윗내용 끝 */
+
+/* 아래내용 */
+.bp {
+  /* background-color: rosybrown; */
+  position: relative;
+  width: 100%;
+  padding-top: 30px;
+  /* border: 1px solid #333; */
+}
+.bp > img {
+  position: absolute;
+  width: 300px;
+  left: 50%; margin-left: -150px;
+  z-index: 999;
+}
+.bppContainer {
+  /* background-color: thistle; */
+  position: absolute;
+  width: 710px;
+  left: 50%; margin-left: -355px;
+  top: 100px;
+  color: #333;
+  text-align: center;
+}
+.bpp1 > li,
+.bpp2 > li,
+.bpp3 > li,
+.bpp4 > li,
+.bppContainer > p { font-weight: bold; }
+
+.bpp2 li, .bpp3 li, .bpp4 li { float: left; }
+.bpp2 {
+  display: block;
+  position: relative;
+  left: 50%; margin-left: -145px;
+}
+.bpp2 li:first-child { margin-right: 20px; }
+
+.bpp3 {
+  display: block;
+  position: relative;
+  left: 50%; margin-left: -268px;
+}
+.bpp3 li { margin-right: 20px;}
+.bpp3 li:last-child { margin-right: 0 }
+
+.bpp4 {
+  position: relative;
+  left: 50%; margin-left: -260px;
+}
+.bpp4 li { margin-right: 20px; }
+.bpp4 li:last-child { margin-right: 0; }
+
+.bppContainer > p { text-align: center; }

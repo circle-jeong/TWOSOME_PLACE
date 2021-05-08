@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+  <script>
+    $( function () {
+      var filter = 'win16|win32|win64|mac|macintel';
+      if ( navigator.platform ) {
+        if ( filter.indexOf( navigator.platform.toLowerCase() )
+        < 0 ) {
+          location.href = 'twosome-m/';
+        } else {
+          location.href = 'twosome-d/';
+        }
+      }
+    } );
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

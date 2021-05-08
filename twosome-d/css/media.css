@@ -1,0 +1,163 @@
+/* 반응형 미디어쿼리 */
+
+@media screen and (max-width: 1280px) {
+
+  /* 메인 슬라이드 영역 */
+  .mainSlide {
+    width: 100%; height: 700px;
+  }
+  .swiper-slide > a {
+    width: auto; height: 100%;
+  }
+  .swiper-slide > a > img {
+    width: auto; height: 100%;
+  }
+  /* //끝 */
+
+  /* 헤더 */
+  header {
+    width: 100%; height: 80px;
+  }
+
+  /* 줄어드는 네비 */
+  .hdfixed {
+    height: 60px;
+  }
+  /* 로고 */
+  #logo.ls {
+    height: 50px; top: 5px;
+  }
+  /* 햄버거 아이콘 영역 */
+  .bar { margin-top: -5px;}
+
+
+
+
+
+
+
+  /* 메뉴 자세히 보기 영역 */
+  .main2 { height: 600px; }
+  .menu1 { bottom: 30px;}
+  .menu1 img { height: 250px;}
+  .menu2 { left: 500px; bottom: 30px; }
+  .menu2 img { height: 250px;}
+  .menu3 { left: 650px; bottom: 70px; }
+  .menu3 img { height: 200px; }
+  .menu4 { left: 250px; bottom: 100px; }
+  .menu4 img { height: 350px;}
+
+  .main2txt {
+    width: 55%; height: 55%;
+  }
+  .m2txt1 { right: 10px; top:50px; }
+  .m2txt1 img { height: 90px; }
+
+  .m2txt2 { right: -150px; top: 150px; }
+  .m2txt2 img { height: 80px; }
+
+  .main2txt a {
+    width: 150px; height: 50px;
+    line-height: 50px; top: 250px; 
+    margin-right: -80px;
+  }
+  /* //끝 */
+}
+
+
+/**************************************************************************/
+
+
+@media screen and (max-width: 780px) {
+    /* 메인 슬라이드 영역 */
+    .mainSlide {
+      width: 100%; height: 500px;
+    }
+    .swiper-slide > a {
+      width: auto; height: 100%;
+    }
+    .swiper-slide > a > img {
+      width: auto; height: 100%;
+      max-width: 800px;
+    }
+    /* //끝 */
+
+
+
+    
+  /* 아이콘 누르면 나오는 gnb */
+  .gnbb > li > a {
+    font-size: 1.3em;
+  }
+  #sub1 > li > a,
+#sub2 > li > a,
+#sub3 > li > a,
+#sub4 > li > a,
+#sub5 > li > a,
+#sub6 > li > a { 
+  font-size: 1em; 
+  color: #7d6c64;
+  font-weight: bold;
+}
+
+
+  /* 메뉴 자세히 보기 영역 */
+  .main2 { height: 500px; }
+  .menu1 { bottom: 30px;}
+  .menu1 img { height: 150px;}
+  .menu2 { left: 420px; bottom: 30px; }
+  .menu2 img { height: 150px;}
+  .menu3 { left: 550px; bottom: 30px; }
+  .menu3 img { height: 150px; }
+  .menu4 { left: 200px; bottom: 30px; }
+  .menu4 img { height: 200px;}
+
+  .main2txt {
+    /* background-color: palegoldenrod; */
+    width: 100%; height: 50%; top:35px;
+  }
+  .m2txt1 { left: 100px;  top:0px; }
+  .m2txt1 img { height: 80px; }
+
+  .m2txt2 { 
+    /* background-color: paleturquoise; */
+  left: 110px; top: 100px; width: 50%;
+  }
+  .m2txt2 img { height: 60px; }
+
+  .main2txt a {
+    width: 150px; height: 50px;
+    line-height: 50px; 
+    top: 105px; left: 450px;
+  }
+  /* //끝 */
+
+
+  /* 매장 찾기 프렌차이즈 */
+  .m4content {
+    /* background-color: palevioletred; */
+    height: 70%; position: absolute;
+    top: 60px;
+  }
+  .fc {
+    width: 40%;
+    height: 100%;
+    float: left;
+    padding: 30px;
+    background-color: #AB162C;
+    margin-left: 80px;
+  }
+
+  .fs {
+    width: 40%;
+    height: 100%;
+    float: right; padding: 30px;
+    margin-right: 80px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+
+  
+}
+
+

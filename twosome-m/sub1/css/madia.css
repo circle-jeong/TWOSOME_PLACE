@@ -1,0 +1,80 @@
+/* 푸터 */
+
+footer {
+  position: relative;
+  background-color: #fff;
+  width: 100%; height: 300px;
+}
+/* 윗내용 */
+.tp {
+  /* background-color: rosybrown; */
+  position: relative;
+  width: 100%; height: 70px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+.tpp {
+  /* background-color: coral; */
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+.tpp > li {
+  float: left;
+}
+.tpp a {
+  color: #333;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.tpp li:last-child a { margin-right: 0;}
+/* //윗내용 끝 */
+
+/* 아래내용 */
+.bp {
+  /* background-color: rosybrown; */
+  position: relative;
+  width: 100%;
+  /* border: 1px solid #333; */
+}
+.bp > img {
+  position: relative;
+  width: 250px;
+  z-index: 999;
+  left: 60px;
+}
+.bppContainer {
+  /* background-color: thistle; */
+/*   position: absolute; */
+  width: 100%;
+  top: 0px;
+  color: #333;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.bpp2 li { float: left; }
+.bpp2 {
+  display: block;
+  position: relative;
+  left: 50%; margin-left: -120px;
+}
+.bpp2 li:first-child { margin-right: 5px; }
+
+.bpp3 {
+  display: block;
+  position: relative;
+}
+.bpp3 li { margin-right: 20px;}
+.bpp3 li:last-child { margin-right: 0 }
+
+.bpp4 {
+  position: relative;
+}
+.bpp4 li { margin-right: 20px; }
+.bpp4 li:last-child { margin-right: 0; }
+
+.bppContainer > p { text-align: center; }

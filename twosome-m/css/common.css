@@ -1,0 +1,20 @@
+@import url(fonts.css);
+
+/* 초기화 */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+li { list-style: none; }
+a { text-decoration: none; color: #444; }
+body { overflow-x: hidden; }
+.wrap { 
+  margin: 0 auto; position: relative; top: 0; width: 100%; max-width: 375px; overflow: hidden;
+}
+/* 클리어픽스 */
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}

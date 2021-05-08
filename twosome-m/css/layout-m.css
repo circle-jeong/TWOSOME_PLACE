@@ -1,0 +1,589 @@
+@media screen and (max-width: 375px) {
+  body { overflow-x: hidden;}
+/* 헤더 */
+header {
+  position: relative;
+  width: 100%; height: 60px;
+  background-color: #f0e9e3f8;
+  z-index: 300;
+}
+#logo {
+  float: left;
+  position: relative;
+  width: 50%; height: 100%;
+}
+#logo > a {
+  display: block; position: relative;
+}
+#logo > a > img {
+  position: absolute;
+  height: 40px;
+  top: 10px;
+  left: 20px;
+}
+nav {
+  /* background-color: aquamarine; */
+  position: relative;
+  float: right;
+  width: 50%; height: 100%;
+}
+.navi {
+  float: right;
+  display: block;
+  font-size: 3em;
+  margin-right: 20px;
+  color: #fff;
+  margin-top: -4px;
+}
+.navi i { transition: all 0.5s; }
+.navi:hover > i { color: #ab162c; }
+
+
+/* 햄버거 아이콘 누르면 나오는 영역 */
+.gnb {
+  background-color: #f0e9e3;
+  position: fixed;
+  width: 100%; height: 100%;
+  z-index: 888;
+  /* opacity: 0; */
+  top: -100%;
+  transition: all 0.6s;
+}
+.gnb.on { top: 0; }
+
+
+
+/* 상단 로고 로그인 등 애들 */
+
+.hide {
+  /* background-color: palegoldenrod; */
+  position: absolute;
+  width: 100%; height: 12%;
+}
+
+/* 로고 */
+.logo {
+  /* background-color: paleturquoise; */
+  width: 50%; height: 60%;
+  position: relative;
+  float: left;
+}
+.logo > a {
+  display: block; 
+  position: relative;
+}
+.logo > a > img {
+  position: absolute;
+  height: 40px;
+  top: 10px;
+  left: 20px;
+  bottom: 10px;
+}
+
+/* 로그인 매장찾기 */
+.htxt {
+  /* background-color: palevioletred; */
+  width: 100%; height: 40px;
+  position: absolute;
+  line-height: 40px;
+  top: 55px;
+}
+.htxt > ul > li {
+  float: left;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #514945;
+  width: 50%;
+  text-align: center;
+  border-top: 1px solid #514945;
+  border-bottom: 1px solid #514945;
+}
+.htxt > ul > li:nth-child(1) { border-right: 1px solid #514945; }
+
+/* 닫기 버튼 */
+.x {
+  font-size: 3em;
+  float: right;
+  height: 100%;
+  margin-right: 20px;
+  margin-top: -4px;
+}
+.x > a > i { transition: all 0.5s; color: #fff; }
+.x:hover > a > i { color: #AB162C; }
+
+/* 메뉴 */
+.gnbb {
+  /* background-color: papayawhip; */
+  position: absolute;
+  width: 100%; height: 88%;
+  top: 100px;
+}
+.gnbb > li { width: 100%; }
+.gnbb > li > a{
+  position: relative;
+  text-align: center;
+  display: inline-block; line-height: 50px;
+  width: 100%; height: 50px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #514945;
+  /* background-color: #a09088; */
+  border-bottom: 1px solid #725f56;
+}
+
+.gnbb > li > a > i {
+  position: absolute;
+  right: 40px; top: 20px;
+}
+.gnbb > li > ul > li > a {
+  position: relative;
+  display: inline-block; line-height: 50px;
+  width: 100%; height: 50px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #725f56;
+  text-align: center;
+  border-bottom: 1px solid #f0e9e3;
+}
+.gnbb > li > ul { display: none; }
+.gnbb> li > ul.on { display: block; }
+
+/* 슬라이드 영역 */
+.swiper-container { 
+  position: relative; 
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  z-index: 10;
+}
+.swiper-slide{ 
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-slide > a { 
+  display: block; 
+  width: 100%;
+  overflow: hidden;
+} 
+.swiper-slide img { 
+  float: left;
+  width: 100%;
+}
+.container {
+  width: 100%; height: 100%;
+  position: relative;
+}
+/* //슬라이드 끝 */
+
+/* 메인 콘텐츠 영역 */
+.mainCon {
+  width: 100%; height: 100%;
+  position: relative;
+}
+
+/* 브랜드 스토리 부분 */
+.main1 {
+  width: 100%; height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+.main1 > img { 
+  height: 100%;
+  position: relative;
+  left: -250px;
+}
+/* .parallax {
+  background-image: url(../img/twosome_info1.jpg);
+  height: 100%; width: 100%;
+  z-index: 10;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto;
+  background-position: center;
+} */
+.brandtxt {
+  /* background-color: palegoldenrod; */
+  width: 100%; height: 300px;
+  position: absolute;
+  top: 50px;
+}
+.brandtxt p:nth-child(1) {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em; color: #fff;
+  text-align: center;
+}
+.brandtxt p:nth-child(2) {
+  font-size: 1.2em; color: #fff; text-align: center;
+}
+.brandtxt hr {
+  position: absolute;
+  margin-top: 30px; left: 50%; margin-left: -50px;
+  width: 100px;
+  border: thin solid #fff; border-bottom: 0px;
+}
+/* 투썸 영어 로고 */
+.brandtxt img {
+  width: 100%;
+  position: absolute; left: 50%; margin-left: -185px;
+  bottom: 105px;
+}
+
+/* 브랜드 이야기 바로가기 */
+.brandtxt a {
+  background-color: #AB162C;
+  width: 150px; height: 50px;
+  position: absolute; 
+  display: block;
+  bottom: 40px; left: 50%; margin-left: -75px;
+  text-align: center;
+  font-size: 1em; color: #fff; font-weight: bold;
+  border: 2px solid #AB162C;
+  border-radius: 2px;
+  transition: all 0.6s;
+  line-height: 50px;
+}
+.brandtxt a:hover {
+  background-color: #AB162C;
+  color: #fff;
+}
+
+/* 메뉴 자세히 보기 부분 */
+.main2 {
+background-image: url(../img/bgbg.jpg);
+width: 100%; height: 500px;
+position: relative;
+background-position: center;
+}
+/* 움직이는 메뉴들 */
+.menu1 {
+  position: absolute;
+  bottom: 30px;
+}
+.menu1 img { height: 80px;}
+.menu2 {
+  position: absolute;
+  left: 200px; bottom: 30px;
+}
+.menu2 img { height: 120px; }
+.menu3 {
+  position: absolute;
+  left: 280px; bottom: 30px;
+}
+.menu3 img { height: 90px; }
+.menu4 {
+  position: absolute;
+  left: 85px; bottom: 30px;
+}
+.menu4 img { height: 120px;}
+/* //끝 */
+
+/* 텍스트 */
+.main2txt {
+  /* background-color: #514945; */
+  position: relative;
+  width: 100%; height: 60%;
+  float: right; top: 10px;
+}
+.m2txt1 {
+  position: absolute;
+  width: 100%;
+  left: 50%; margin-left: -150px;
+  top: 50px;
+  /* right: 40%; */ /* margin-right: -470.5px; */
+}
+.m2txt1 img {
+  width: 300px;
+}
+.m2txt2 {
+  /* background-color: #0fdad3; */
+  position: absolute;
+  top: 190px;
+  width: 100%;
+  left: 50%; margin-left: -120px;
+}
+.m2txt2 img { width: 250px; }
+.main2txt a {
+  background-color: #fff;
+  display: block;
+  width: 120px; height: 40px;
+  position: absolute;
+  text-align: center; line-height: 40px;
+  font-size: 1em;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  font-weight: bold;
+  transition: all 0.6s;
+  top: 260px;
+  left: 50%; margin-left: -60px;
+  color: #728f6c
+}
+.main2txt a:hover {
+  background-color: #fff;
+  color: #728f6c;
+}
+/* .hideme { opacity: 0;} */
+/* //끝 */
+/* //메뉴보기 끝 */
+
+/* 특별매장 */
+.main3 {
+  width: 100%; height: 450px; position: relative;
+  overflow: hidden;
+}
+.main3 > img { width: 100%; }
+/* parallax2 */
+
+/* 동그라미 */
+
+.rosWrap {
+  position: absolute;
+  width: 300px; height: 300px;
+  top: 50%; margin-top: -150px;
+  left: 50%; margin-left: -150px;
+  cursor: pointer;
+}
+.rosWrap img { position: absolute; width: 300px; }
+
+/* 동그라미 텍스트 */
+.ros2txt {
+  position: absolute;
+  width: 100%; height: 100%;
+  text-align: center; top: 14%;
+}
+.ros2txt p:nth-child(1) {
+  font-size: 1.5em; font-weight: bold;
+  color: #46322d; margin-top: 10px;
+}
+.ros2txt p:nth-child(2) {
+  position: absolute;
+  left: 58%; top: 30px;
+  font-size: 1.5em; font-weight: bold;
+  font-family: 'KCC-eunyoung';
+  color: #15b1ac;
+  transform: rotate(-8deg);
+}
+.ros2txt p:nth-child(3) {
+  margin-top: 25px;
+  color: #231815;
+  font-size: 1.1em; font-weight: bold;
+}
+.ros2txt p:last-child {
+  margin-top: 15px;
+}
+/* 자세히보기 버튼 */
+.rosWrap a {
+  position: absolute;
+  display: block;
+  background-color: #0fdad3;
+  border: 2px solid #0fdad3;
+  border-radius: 2px;
+  width: 100px; height: 35px;
+  text-align: center; line-height: 30px;
+  top: 81%; left: 35%;
+  font-size: 1em; color: #fff;
+  font-weight: bold;
+  transition: all 0.6s;
+}
+
+/* 동그라미 돌리기 */
+/* .rosWrap {
+  width: 500px; height: 500px; position: absolute;
+  top: 0; left: 50%; margin-left: -250px;
+}
+.card {
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+.ros1 { z-index: 2; }
+.ros2 { z-index: 1; transform: rotateY(-180deg); }
+.rosWrap:hover .ros1 {
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+.rosWrap:hover .ros2 {
+  z-index: 2;
+  transform: rotateY(0deg);
+} */
+
+/* //끝 */
+
+/* 매장찾기, 프렌차이즈 전체영역 */
+.main_4 {
+  background-color: palegoldenrod;
+  width: 100%; height: 300px; position: relative;
+}
+.m4content {
+  /* background-color: palevioletred; */
+  width: 100%; height: 100%; position: absolute;
+}
+/* 매장찾기 */
+.fc {
+  position: relative;
+  width: 100%; height: 50%;
+  background-color: #AB162C;
+  padding-left: 50px;
+  padding-top: 5px;
+  border-bottom: 1px solid #333;
+  margin: 0 auto;
+}
+.fc span { color: #fff; }
+.fc span:nth-child(1) {
+  font-size: 3em; font-weight: bold;
+}
+.fc input {
+  width: 90%; height: 50px;
+  border: 2px solid #231815;
+  margin-top: 10px;
+}
+
+/* 창업 안내 */
+.fs {
+  position: relative;
+  background-image: url(../img/fran-m.jpg);
+  width: 100%; height: 50%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+.fs span { color: #fff; }
+.fs span:nth-child(1) {
+  font-size: 3em; font-weight: bold;
+}
+.fs a i {
+  position: absolute;
+  color: #fff;
+  top: 40px; right: 4%;
+  transition: all 0.6s;
+}
+/* .fs img {
+  position: absolute;
+  width: 180px;
+  right: -30px; bottom: -40px;
+} */
+.fs a:hover i {
+  transform: scale(1.2);
+}
+/* //매장찾기, 프렌차이즈 전체영역 끝 */
+
+/* sns 영역 */
+.sns {
+  background-color: #fff;
+  position: relative;
+  width: 100%; height: 300px;
+}
+/* sns 컨텐츠 영역 */
+.snscon {
+  /* background-color: palegoldenrod; */
+  width: 100%; height: 100%;
+  padding-top: 30px;
+}
+.snscon > span {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 35px;
+}
+.snscon hr {
+  position: absolute;
+  margin-top: 35px; left: 50%; margin-left: -50px;
+  width: 100px;
+  border: thin solid #111; border-bottom: 0px;
+}
+.snsi {
+  /* background-color: pink; */
+  position: relative;
+  width: 50%; height: 100px;
+  top: 80px;
+  margin: 0 auto;
+}
+.snsi li { float: left; }
+.sns li img { width: 50px; height: 50px;}
+.sns li a { display: block; }
+.sns li:nth-child(2) a { margin: 0 15px; }
+/* //sns 영역 끝 */
+
+/* 푸터 */
+
+footer {
+  position: relative;
+  background-color: #fff;
+  width: 100%; height: 300px;
+}
+/* 윗내용 */
+.tp {
+  /* background-color: rosybrown; */
+  position: relative;
+  width: 100%; height: 70px;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+}
+.tpp {
+  /* background-color: coral; */
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+.tpp > li {
+  float: left;
+}
+.tpp a {
+  color: #333;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.tpp li:last-child a { margin-right: 0;}
+/* //윗내용 끝 */
+
+/* 아래내용 */
+.bp {
+  /* background-color: rosybrown; */
+  position: relative;
+  width: 100%;
+  /* border: 1px solid #333; */
+}
+.bp > img {
+  position: relative;
+  width: 250px;
+  z-index: 999;
+  left: 60px;
+}
+.bppContainer {
+  /* background-color: thistle; */
+/*   position: absolute; */
+  width: 100%;
+  top: 0px;
+  color: #333;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.bpp2 li { float: left; }
+.bpp2 {
+  display: block;
+  position: relative;
+  left: 50%; margin-left: -120px;
+}
+.bpp2 li:first-child { margin-right: 5px; }
+
+.bpp3 {
+  display: block;
+  position: relative;
+}
+.bpp3 li { margin-right: 20px;}
+.bpp3 li:last-child { margin-right: 0 }
+
+.bpp4 {
+  position: relative;
+}
+.bpp4 li { margin-right: 20px; }
+.bpp4 li:last-child { margin-right: 0; }
+
+.bppContainer > p { text-align: center; }
+
+}

@@ -1,0 +1,6 @@
+/* css/fonts.css */
+html {
+  font-size: 14px; line-height: 1.5;
+  font-family: 'Noto Sans KR', sans-serif,'Roboto Slab', serif;
+}
+@font-face { font-family: 'KCC-eunyoung'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff'); font-weight: normal; font-style: normal; }

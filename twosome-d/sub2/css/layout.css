@@ -1,0 +1,175 @@
+/* 상단 */
+.container {
+  width: 100%; height: 100%; position: relative;
+}
+
+/* 서브2 메인 이미지 영역 */
+.sub2main {
+  background-image: url(../img/coffee-main.jpg);
+  width: 100%; height: 600px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.sub2maintxt {
+/*   position: absolute; */
+  color: #fff;
+  font-family: 'Eoe_Zno_B';
+  text-align: center;
+  font-size: 4em;
+  padding-top: 250px;
+}
+
+/* 서브2 메뉴 선택 버른 */
+.menu {
+  position: absolute;
+  /* background-color: palegoldenrod; */
+  width: 50%; height: 40px;
+  margin-left: 25%;
+  bottom: 10%;
+}
+.menu ul {
+  background-color: #f0e9e377;
+  width: 100%; height: 100%;
+  border: 1px solid #514946;
+}
+.menu > ul > li {
+  color: #ffffff;
+  cursor: pointer;
+  float: left;
+  width: 16.6666%; height: 100%;
+  text-align: center;
+  line-height: 40px;
+  border-right: 1px solid #514945;
+}
+.menu > ul > li:last-child { border-right: none; }
+.menu > ul > li:hover { 
+  background-color: #f0e9e3;
+  color: #3d3632;
+  font-weight: bold;
+}
+.menu > ul > li:nth-child(1) {
+  background-color: #f0e9e3;
+  color: #3d3632;
+  font-weight: bold;
+}
+/* //끝 */
+
+
+/* 콘텐츠 영역 */
+.content { 
+  /* background-color: wheat; */
+  max-width: 1200px;
+  height: 100%; position: relative;
+  margin: 0 auto;
+  text-align: center;
+ }
+
+/* 추천메뉴 영역 */
+.reco { 
+  position: relative;
+  /* background-color: palegoldenrod; */
+  width: 100%; height: 100%;
+  padding-top: 7%;
+}
+
+/* 추천메뉴 텍스트 */
+.recotxt {
+  /* position: absolute; */
+  /* background-color: paleturquoise; */
+  width: 100%; height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+.recotxt p {
+  font-size: 2em;
+  font-family: 'Eoe_Zno_B';
+  color: #353535;
+}
+.recotxt hr {
+  border: thin solid #353535;
+  border-bottom: 0px;
+  margin-top: 1%;
+}
+/* //텍스트 끝 */
+
+/* 메뉴 이미지 슬라이드 */
+.swiper-container {
+  /* position: absolute; */
+  /* background-color: palevioletred; */
+  width: 100%; height: 400px;
+  /* display:flex; */
+
+}
+.swiper-slide {
+  text-align:center;
+  width: 100%; height: 100%;
+  /* display:flex; */ /* 내용을 중앙정렬 하기위해 flex 사용 */
+  /* align-items:center; */ /* 위아래 기준 중앙정렬 */
+  /* justify-content:center; */ /* 좌우 기준 중앙정렬 */
+  margin-top: 40px;
+}
+.swiper-slide > img {
+  height: 300px;
+}
+/* //슬라이드 끝 */
+
+/* 메뉴 목록 */
+.menuList {
+  width: 100%; height: 100%;
+  position: relative;
+}
+.menus { 
+  /* background-color: rosybrown; */
+  width: 100%; height: 100%;
+  margin-top: 10%;
+}
+.mimg {
+  height: 270px; width: 270px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.mimg > img {
+  height: 270px;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+.mimg:hover img {
+  transform: scale(1.2);
+}
+.menus > li {
+  float: left;
+  width: 25%;
+  margin-bottom: 10%;
+}
+.menus > li > p {
+  text-align: center;
+  margin-top: 10px;
+}
+/* //메뉴 목록 끝 */
+
+/* 더보기 */
+.plus {
+  /* background-color: palegoldenrod; */
+  width: 60%; height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.plus > p {
+  /* background-color: palegreen; */
+  width: 250px; height: 60px;
+  border: 2px solid #514945;
+  border-radius: 2px;
+  line-height: 60px;
+  margin: 150px auto;
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #514945;
+  cursor: pointer;
+}
+.plus > p:hover {
+  background-color: #514945;
+  color: #fff;
+}
